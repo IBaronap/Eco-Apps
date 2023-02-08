@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Text*/
+
+h1, h3, p, img{
+    color: white;
+    margin: 5vh auto;
+    text-align: center;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+    @keyframes slidein {
+        from {
+            margin-top: -1vh;
+        }
+        to {
+            margin-top: 5vh;
+        }
+    }
+
+img{
+    display: block;
+    max-width: 30vw;
+}
+
+/*Buttons*/
+
+button{
+    border: solid 2px white;
+    background-color: black;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    margin: 0 2vw;
+    scale: 1.2;
+    transition: all 0.5s;
+
+    animation-duration: 1s;
+    animation-name: scale;
+}
+
+    @keyframes scale {
+        from {
+            scale: 0;
+            opacity: 0;
+        }
+        to {
+            scale: 1.2;
+            opacity: 1;
+        }
+    }
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+button:active{
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+#APIOptions{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*Results display*/
+
+#display{
+    margin: 10vh 20vw;
+    padding: 5vh 5vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.SmallText{
+    font-size: x-small;
+}
+
+    /*Random User results display*/
+
+    .RandomUser{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .UserPic{
+        margin: 5vh 10vh;
+        width: 25%;
+        height: 25%;
+    }
+
+    .UserInfo p{
+        text-align: left;
+    }
