@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/*General*/
+
+h3, h4, p{margin: 1vh 0;}
+
+.SmallText{font-size: small;}
+
+img{
+    width: 8vw;
+    height: 8vw;
+    margin: 5vh 0 2vh 0;
+}
+
+/*Buttons (general & OPT)*/
+
+button{
+    padding: 2vh 6vh;
+    margin: 4vh 0 1vh 0;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+    button:hover{opacity: 0.6;}
+
+    .OPT{
+        padding: 2vh;
+        margin: 4vh 1vw 1vh 1vw;
+        background-color: white;
+    }
+
+    .OPT img{
+        margin: 0;
+        width: 3vw;
+        height: 3vw;
+    }
+
+/*Render*/
+
+#PokemonResults{
+    margin: 5vh auto;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+    #PokemonData{
+        padding: 2vh 0 4vh 0;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+
+    #Type{
+        width: 10vw;
+        padding: 1vh 0 1vh 0;
+        border-radius: 10px;
+        margin: 2vh auto;
+    }
+
+        .Grass{background-color: rgb(117, 228, 117);}
+
+        .Fire{background-color: rgb(235, 157, 85);}
+
+        .Water{background-color: rgb(115, 190, 243);}
+
+        .Electric{background-color: rgb(247, 236, 32);}
+
+    #BasicInfo{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0 0 3vh;
+    }
